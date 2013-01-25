@@ -1,0 +1,5 @@
+group :csg do
+  guard :openscad, format: :csg do
+    watch(%r{^scad/.+\.scad$})
+  end
+end

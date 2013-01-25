@@ -1,3 +1,6 @@
+Gemfile.lock
+tmp
+
 # rcov generated
 coverage
 coverage.data

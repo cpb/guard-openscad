@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "guard-openscad"
   gem.homepage = "http://github.com/cpb/guard-openscad"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Guard plugin for OpenSCAD}
+  gem.description = %Q{Checks syntax of .scad files and generates .stl files.}
   gem.email = "me@cpb.ca"
   gem.authors = ["Caleb Buxton"]
   # dependencies defined in Gemfile
@@ -29,6 +29,7 @@ require 'rspec/core'
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList['spec/**/*_spec.rb']
+  spec.rspec_opts = "-r simplecov -p"
 end
 
 RSpec::Core::RakeTask.new(:rcov) do |spec|
