@@ -5,7 +5,7 @@ gem "guard"
 
 gem "rb-fsevent"
 
-gem "scad4r", path: "/Users/caleb/Projects/scad4r"
+gem "scad4r", git: "git://github.com/cpb/scad4r.git"
 
 group :development do
   gem "rspec"
