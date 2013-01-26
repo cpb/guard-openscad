@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "guard-openscad"
-  s.version = "0.0.4"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Caleb Buxton"]
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     ".rspec",
+    ".simplecov",
     "Gemfile",
     "Guardfile",
     "LICENSE.txt",
@@ -32,6 +33,7 @@ Gem::Specification.new do |s|
     "spec/guard/openscad_spec.rb",
     "spec/integration/guard/openscad_spec.rb",
     "spec/spec_helper.rb",
+    "spec/support/core_ext/hash/except.rb",
     "spec/support/matchers/run_files_matcher.rb"
   ]
   s.homepage = "http://github.com/cpb/guard-openscad"
@@ -53,6 +55,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
+      s.add_development_dependency(%q<simplecov-csv>, [">= 0"])
       s.add_development_dependency(%q<guard-rspec>, [">= 0"])
     else
       s.add_dependency(%q<growl>, [">= 0"])
@@ -64,6 +67,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<bundler>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
       s.add_dependency(%q<simplecov>, [">= 0"])
+      s.add_dependency(%q<simplecov-csv>, [">= 0"])
       s.add_dependency(%q<guard-rspec>, [">= 0"])
     end
   else
@@ -76,6 +80,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 0"])
     s.add_dependency(%q<simplecov>, [">= 0"])
+    s.add_dependency(%q<simplecov-csv>, [">= 0"])
     s.add_dependency(%q<guard-rspec>, [">= 0"])
   end
 end
