@@ -15,7 +15,7 @@ module Guard
       super
 
       net_options = {all_on_start: true,
-                     benchmark: true,
+                     benchmark: false,
 
                      runner: Scad4r::Runner,
                      result_parser: Scad4r::ResultParser,
