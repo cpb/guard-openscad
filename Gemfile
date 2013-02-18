@@ -8,6 +8,11 @@ gem "rb-fsevent", "~> 0.9"
 gem "scad4r", "~> 0.2"
 
 group :development do
+  gem "aruba", "~> 0.5"
+
+  gem "cucumber", "~> 1.2"
+
+  gem "guard-cucumber", "~> 1.3"
   gem "guard-rspec", "~> 2.3"
 
   gem "jeweler", "~> 1.8"
