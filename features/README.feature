@@ -9,7 +9,7 @@ Feature: A Guard plugin which runs .scad files through OpenSCAD
     gem "guard-openscad", path: "/Users/caleb/Projects/guard-openscad"
     """
     And Run `bundle install`
-    And Setup your Guardfile `guard init`
+    And Setup your Guardfile `bundle exec guard init`
     And Run `bundle exec guard`
     When You create a new scad file `scad/cube.scad`
     """

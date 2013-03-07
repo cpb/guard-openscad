@@ -10,16 +10,14 @@ Given /^Add to your `Gemfile`$/ do |string|
 end
 
 When /^Run `bundle install`$/ do
-  unset_bundler_env_vars
-
   steps %{
     When I successfully run `bundle install` for up to 22 seconds
   }
 end
 
-Given /^Setup your Guardfile `guard init`$/ do
+Given /^Setup your Guardfile `([^`]*)`$/ do |command|
   steps %{
-    When I run `guard init`
+    When I run `#{command}`
   }
 end
 
