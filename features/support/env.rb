@@ -15,6 +15,8 @@ $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
 require 'rspec/expectations'
 require 'aruba/cucumber'
 
+require 'pry'
+
 Before do
   unset_bundler_env_vars
 end

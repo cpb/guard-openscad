@@ -11,7 +11,7 @@ end
 
 When /^Run `bundle install`$/ do
   steps %{
-    When I successfully run `bundle install` for up to 22 seconds
+    When I successfully run `bundle install` for up to 44 seconds
   }
 end
 
@@ -24,6 +24,7 @@ end
 Given /^Run `bundle exec guard`$/ do
   steps %{
     When I run `bundle exec guard` interactively
+    And I type "exit"
   }
 end
 
@@ -36,9 +37,13 @@ When /^You create a new scad file `scad\/cube\.scad`$/ do |string|
   }
 end
 
-Then /^Guard should have processed "(.*?)"$/ do |a_file|
+Then /^Guard should notify (?:me|you) with "([^"]*)"$/ do |notification|
+  begin
   steps %{
-    When The default aruba timeout is 24 seconds
-    Then I wait for output to contain "#{a_file}"
+    Then the output should contain "#{notification}"
   }
+  rescue ChildProcess::TimeoutError => e
+    type("exit")
+    retry
+  end
 end

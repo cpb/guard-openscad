@@ -15,5 +15,6 @@ Feature: A Guard plugin which runs .scad files through OpenSCAD
     """
     cube(10,10,10);
     """
-    Then Guard should have processed "scad/cube.scad"
+    Then Guard should notify you with "openscad SUCCESS"
+    And a file named "scad/cube.csg" should exist
 
