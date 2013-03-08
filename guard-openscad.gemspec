@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.email = "me@cpb.ca"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Guardfile",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "features/README.feature",
@@ -53,7 +53,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<growl>, ["~> 1.0"])
       s.add_runtime_dependency(%q<guard>, ["~> 1.6"])
       s.add_runtime_dependency(%q<rb-fsevent>, ["~> 0.9"])
-      s.add_runtime_dependency(%q<scad4r>, ["~> 0.2.1"])
+      s.add_runtime_dependency(%q<scad4r>, ["~> 0.3"])
       s.add_development_dependency(%q<aruba>, ["~> 0.5"])
       s.add_development_dependency(%q<cucumber>, ["~> 1.2"])
       s.add_development_dependency(%q<guard-cucumber>, ["~> 1.3"])
@@ -67,7 +67,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<growl>, ["~> 1.0"])
       s.add_dependency(%q<guard>, ["~> 1.6"])
       s.add_dependency(%q<rb-fsevent>, ["~> 0.9"])
-      s.add_dependency(%q<scad4r>, ["~> 0.2.1"])
+      s.add_dependency(%q<scad4r>, ["~> 0.3"])
       s.add_dependency(%q<aruba>, ["~> 0.5"])
       s.add_dependency(%q<cucumber>, ["~> 1.2"])
       s.add_dependency(%q<guard-cucumber>, ["~> 1.3"])
@@ -82,7 +82,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<growl>, ["~> 1.0"])
     s.add_dependency(%q<guard>, ["~> 1.6"])
     s.add_dependency(%q<rb-fsevent>, ["~> 0.9"])
-    s.add_dependency(%q<scad4r>, ["~> 0.2.1"])
+    s.add_dependency(%q<scad4r>, ["~> 0.3"])
     s.add_dependency(%q<aruba>, ["~> 0.5"])
     s.add_dependency(%q<cucumber>, ["~> 1.2"])
     s.add_dependency(%q<guard-cucumber>, ["~> 1.3"])
