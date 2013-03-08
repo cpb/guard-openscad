@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "guard-openscad"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Caleb Buxton"]
-  s.date = "2013-02-18"
+  s.date = "2013-03-08"
   s.description = "Checks syntax of .scad files and generates .stl files."
   s.email = "me@cpb.ca"
   s.extra_rdoc_files = [
@@ -26,6 +26,10 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "features/README.feature",
+    "features/step_definitions/.gitkeep",
+    "features/step_definitions/README_steps.rb",
+    "features/support/env.rb",
     "guard-openscad.gemspec",
     "lib/guard/openscad.rb",
     "lib/guard/openscad/templates/Guardfile",
@@ -49,36 +53,45 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<growl>, ["~> 1.0"])
       s.add_runtime_dependency(%q<guard>, ["~> 1.6"])
       s.add_runtime_dependency(%q<rb-fsevent>, ["~> 0.9"])
-      s.add_runtime_dependency(%q<scad4r>, ["~> 0.2"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.12"])
-      s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
+      s.add_runtime_dependency(%q<scad4r>, ["~> 0.2.1"])
+      s.add_development_dependency(%q<aruba>, ["~> 0.5"])
+      s.add_development_dependency(%q<cucumber>, ["~> 1.2"])
+      s.add_development_dependency(%q<guard-cucumber>, ["~> 1.3"])
+      s.add_development_dependency(%q<guard-rspec>, ["~> 2.3"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8"])
+      s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.12"])
       s.add_development_dependency(%q<simplecov>, ["~> 0.7"])
       s.add_development_dependency(%q<simplecov-csv>, ["~> 0.1"])
-      s.add_development_dependency(%q<guard-rspec>, ["~> 2.3"])
     else
       s.add_dependency(%q<growl>, ["~> 1.0"])
       s.add_dependency(%q<guard>, ["~> 1.6"])
       s.add_dependency(%q<rb-fsevent>, ["~> 0.9"])
-      s.add_dependency(%q<scad4r>, ["~> 0.2"])
-      s.add_dependency(%q<rspec>, ["~> 2.12"])
-      s.add_dependency(%q<rdoc>, ["~> 3.12"])
+      s.add_dependency(%q<scad4r>, ["~> 0.2.1"])
+      s.add_dependency(%q<aruba>, ["~> 0.5"])
+      s.add_dependency(%q<cucumber>, ["~> 1.2"])
+      s.add_dependency(%q<guard-cucumber>, ["~> 1.3"])
+      s.add_dependency(%q<guard-rspec>, ["~> 2.3"])
       s.add_dependency(%q<jeweler>, ["~> 1.8"])
+      s.add_dependency(%q<rdoc>, ["~> 3.12"])
+      s.add_dependency(%q<rspec>, ["~> 2.12"])
       s.add_dependency(%q<simplecov>, ["~> 0.7"])
       s.add_dependency(%q<simplecov-csv>, ["~> 0.1"])
-      s.add_dependency(%q<guard-rspec>, ["~> 2.3"])
     end
   else
     s.add_dependency(%q<growl>, ["~> 1.0"])
     s.add_dependency(%q<guard>, ["~> 1.6"])
     s.add_dependency(%q<rb-fsevent>, ["~> 0.9"])
-    s.add_dependency(%q<scad4r>, ["~> 0.2"])
-    s.add_dependency(%q<rspec>, ["~> 2.12"])
-    s.add_dependency(%q<rdoc>, ["~> 3.12"])
+    s.add_dependency(%q<scad4r>, ["~> 0.2.1"])
+    s.add_dependency(%q<aruba>, ["~> 0.5"])
+    s.add_dependency(%q<cucumber>, ["~> 1.2"])
+    s.add_dependency(%q<guard-cucumber>, ["~> 1.3"])
+    s.add_dependency(%q<guard-rspec>, ["~> 2.3"])
     s.add_dependency(%q<jeweler>, ["~> 1.8"])
+    s.add_dependency(%q<rdoc>, ["~> 3.12"])
+    s.add_dependency(%q<rspec>, ["~> 2.12"])
     s.add_dependency(%q<simplecov>, ["~> 0.7"])
     s.add_dependency(%q<simplecov-csv>, ["~> 0.1"])
-    s.add_dependency(%q<guard-rspec>, ["~> 2.3"])
   end
 end
 
