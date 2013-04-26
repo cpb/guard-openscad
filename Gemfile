@@ -5,7 +5,7 @@ gem "guard", "~> 1.6"
 
 gem "rb-fsevent", "~> 0.9"
 
-gem "scad4r", "~> 0.3"
+gem "scad4r", "~> 0.3.1"
 
 group :development do
   gem "aruba", "~> 0.5"

@@ -17,7 +17,7 @@ end
 
 Given /^Setup your Guardfile `([^`]*)`$/ do |command|
   steps %{
-    When I run `#{command}`
+    When I successfully run `#{command}` for up to 44 seconds
   }
 end
 
